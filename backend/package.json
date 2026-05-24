@@ -1,7 +1,7 @@
 {
   "name": "whereheartsmeet-backend",
   "version": "1.0.0",
-  "description": "Backend for Where Hearts Meet Agency Telegram notifications",
+  "description": "Backend for Where Hearts Meet Agency",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
